@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: calc(var(--offset-base-size) * 2);
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .filters {
+    margin-top: 10px;
+    order: 2;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

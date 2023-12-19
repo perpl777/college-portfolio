@@ -1,0 +1,23 @@
+.work {
+  width: 100%;
+}
+
+.image {
+  display: block; /* Чтобы не было отступа снизу */
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  gap: calc(var(--offset-base-size) * 5);
+}

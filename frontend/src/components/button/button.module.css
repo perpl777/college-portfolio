@@ -1,0 +1,17 @@
+.btn {
+  box-sizing: border-box;
+  cursor: pointer;
+
+  border: 1px solid #BBBBBB;
+  background-color: inherit;
+
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.btn:hover {
+  /* font-weight: var(--fw-bold); */
+  color: white;
+  border-color: black;
+  background-color: black;
+}
